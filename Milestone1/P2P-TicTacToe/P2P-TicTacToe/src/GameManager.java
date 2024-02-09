@@ -91,6 +91,7 @@ class GameManager implements Disposer {
     }
 
     PlayResult result = game.play(player, x, y);
+    
 
     // GAME_FINISHED and GAME_NOT_FINISHED are not error states
     // the rest are and should return 400 errors
@@ -102,8 +103,12 @@ class GameManager implements Disposer {
     if (result == PlayResult.GAME_FINISHED) {
       this.games.remove(game);
       response.put("gameOver", true);
+      //mod- addwinner to response
+      response.put("winner", player.toString());
     } else {
       response.put("gameOver", false);
+      //mod- addwinner to response
+      response.put("winner", player.toString());
     }
 
     Utils.sendSuccess(exchange, response);
