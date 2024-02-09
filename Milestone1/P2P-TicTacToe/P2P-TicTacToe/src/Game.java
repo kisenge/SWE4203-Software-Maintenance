@@ -86,10 +86,7 @@ class Game implements Disposer {
     if (player == Player.HOST) {
       this.game[x][y] = State.X;
     } else {
-      //this.game[y][y] = State.O;
-      
-      //corrected x location
-      this.game[x][y] = State.O;
+      this.game[y][y] = State.O;
     }
 
     Game.log.info(player.toString() + " played " + this.game[x][y].toString() + " at " + x + ", " + y);

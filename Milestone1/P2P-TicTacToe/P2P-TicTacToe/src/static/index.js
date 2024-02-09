@@ -84,20 +84,12 @@ const setTurnDisp = () => {
  */
 const setWinnerDisp = (winner) => {
   $("#game-stat-disp").removeClass("invisible").addClass("visible");
-/*
+
   if ((winner === "HOST" && gameState.player === "HOST") || (winner === "OPPONENT" && gameState.player === "OPPONENT")) {
     gameStatusDisplay.textContent = "You Won!";
   } else if ((winner === "HOST" && gameState.player === "OPPONENT") || (winner === "OPPONENT" && gameState.player === "HOST")) {
     gameStatusDisplay.textContent = "Better Luck Next Time!";
-  } */
-  if ((winner === "HOST" && gameState.player === "HOST") || (winner === "OPPONENT" && gameState.player === "OPPONENT")) {
-    gameStatusDisplay.textContent = "You Won!";
-   if ((winner === "HOST" && gameState.player === "OPPONENT") || (winner === "OPPONENT" && gameState.player === "HOST")) {
-    gameStatusDisplay.textContent = "Better Luck Next Time!";
-  } 
-} 
-  
-  else {
+  } else {
     gameStatusDisplay.textContent = "No Winner for this Game.";
   }
 }
@@ -126,7 +118,6 @@ const createSource = (url) => {
      * @type {{ location: [number, number], gameOver: boolean, winner: "HOST" | "OPPONENT" | "NONE" }}
      */
     const data = JSON.parse(event.data);
-    console.log("bad");
     console.log(data);
 
     const [x, y] = data.location;
@@ -222,11 +213,7 @@ const makePlay = async (x, y) => {
         placeMarker(x, y, "O");
       }
 
-      
-
       if (data.gameOver) {
-        console.log('brutal')
-        console.log(data)
         setWinnerDisp(data.winner);
       }
     }
