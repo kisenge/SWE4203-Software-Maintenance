@@ -17,7 +17,7 @@ Problem Tracking
 
 
 
-3) Problem 3: Resetting the game needs to be complete
+3) Problem 3: Resetting the game needs to be complete (replayable games?)
 
 
 
@@ -29,7 +29,7 @@ Problem Tracking
 
 
 
-6) Problem 6: It is not checking if the move is valid it just counts if the moves.
+6) Problem 6: It is not checking if the move is valid it just counts if the user clicked on a square.
 
 
 
