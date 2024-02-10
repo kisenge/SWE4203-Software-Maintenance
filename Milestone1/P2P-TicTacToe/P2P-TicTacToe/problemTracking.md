@@ -22,3 +22,11 @@ Problem Tracking
 
 
 4) Problem 4: Need to fix the message for the loser
+
+
+
+5) Problem 5: Will declare host a winner when there is no winner at the end.
+
+
+
+6) Problem 6: When host wins the system dclares him the winner on the hosts end but not for the other player.
