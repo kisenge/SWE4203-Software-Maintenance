@@ -26,3 +26,11 @@ Problem Tracking
 
 
 5) Problem 5: Will declare host a winner when there is no winner at the end.
+
+
+
+6) Problem 6: It is not checking if the move is valid it just counts if the moves.
+
+
+
+7) Problem 7: the system doesnt end the game for either users if the other resets/resigns.
