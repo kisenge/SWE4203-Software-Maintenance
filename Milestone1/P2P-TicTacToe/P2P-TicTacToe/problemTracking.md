@@ -17,20 +17,25 @@ Problem Tracking
 
 
 
-3) Problem 3: Resetting the game needs to be complete (replayable games?)
+3) Perfective-change: Resetting the game needs to be complete (replayable games?)
 
 
 
-4) Problem 4: Need to fix the message for the loser. When host wins the system dclares him the winner on the hosts end but not for the other player.
+4) Corrective-change: Need to fix the message for the loser. When host wins the system dclares him the winner on the hosts end but not for the other player.
 
 
 
-5) Problem 5: Will declare host a winner when there is no winner at the end.
+5) Corrective-change: Will declare host a winner when there is no winner at the end.
 
 
 
-6) Problem 6: It is not checking if the move is valid it just counts if the user clicked on a square.
+6) Corrective-change: It is not checking if the move is valid it just counts if the user clicked on a square.
 
 
 
-7) Problem 7: the system doesnt end the game for either users if the other resets/resigns.
+7) Corrective-change: If one player resets the game, the other player doesnt know the other user has left/the game is over.
+
+8) Perfective-change: Center the x's and o's to the middle of the boxes.
+
+9) Adaptive-change: Organize project repository.
+    	-Simplifying folder structer.
