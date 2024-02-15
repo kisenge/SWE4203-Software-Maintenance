@@ -3,7 +3,7 @@ Problem Tracking
 
 
 
-1) Problem 1: Can't place opponent in middle sometimes
+1) Corrective-change: Can't place opponent in middle sometimes
 	xo-
 	-*-
 	--x
@@ -12,7 +12,7 @@ Problem Tracking
 	-Fixed
 
 
-2) Problem 2: Declares No Winner when Host is a winner
+2) Corrective-change: Declares No Winner when Host is a winner
 	-Fixed
 
 
