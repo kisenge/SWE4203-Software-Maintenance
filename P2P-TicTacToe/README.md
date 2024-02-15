@@ -7,6 +7,9 @@ You will need to [install Java](https://www3.ntu.edu.sg/home/ehchua/programming/
 ```
 javac src/*.java
 ```
+## User guide
+To learn how to host/join and play the game, view our user guide at this link:
+{insert link}
 
 ## Running
 Just run the `Main.java` file!
