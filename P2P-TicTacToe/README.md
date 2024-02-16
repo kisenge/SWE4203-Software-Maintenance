@@ -11,7 +11,7 @@ javac src/*.java
 To learn how to host/join and play the game, view our user guide at this link:
 {insert link}
 
-##UML Diagram
+## UML Diagram
 ![image](https://github.com/kisenge/SWE4203-Software-Maintenance/assets/76875002/c9146d7e-4a3b-492f-852f-f5571184b791)
 
 
