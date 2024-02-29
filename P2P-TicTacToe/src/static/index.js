@@ -85,6 +85,9 @@ const setTurnDisp = () => {
 const setWinnerDisp = (winner) => {
   $("#game-stat-disp").removeClass("invisible").addClass("visible");
 
+  console.log("Winner:", winner);
+  console.log("Player:", gameState.player);
+
   if ((winner === "HOST" && gameState.player === "HOST") || (winner === "OPPONENT" && gameState.player === "OPPONENT")) {
     gameStatusDisplay.textContent = "You Won!";
   } else if ((winner === "HOST" && gameState.player === "OPPONENT") || (winner === "OPPONENT" && gameState.player === "HOST")) {
@@ -215,6 +218,7 @@ const makePlay = async (x, y) => {
 
       if (data.gameOver) {
         setWinnerDisp(data.winner);
+        console.log("end game")
       }
     }
   );
@@ -228,11 +232,10 @@ function resetGame() {
   enableConnectionButtons();
   clearTurnDisp();
 
-  // TODO: Remove
-  $("#box-1-1").html("");
-  // We don't reset the error alert since an error may have caused the reset
+  //  don't reset the eWerror alert since an error may have caused the reset
   // and we error to still show after the game has reset
   accessCodeDisplay.textContent = "";
+  errorAlert.textContent = "";
   gameState.eventSource.close();
   gameState = undefined;
 }
